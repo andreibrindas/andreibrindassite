@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css?family=Yantramanav:100');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400');
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.inner {
+    width: 100%;
+    height: 100%;
+    background: url(background1.jpg) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.inner .content {
+    width: 35%;
+    text-align: center;
+    padding: 10px 0 0 50px;
+    margin: 0;
+}
+
+.content h1 {
+    font-family: "Yantramanav" sans-serif;
+    font-size: 600%;
+    color:aliceblue;
+    text-shadow: 1px 1px grey;
+}
+
+#amr {
+    text-decoration: underline;
+}
+
+.amr  {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 200%;
+    line-height: 40%;
+    padding: 50 0 65px 50px;
+    color: azure;
+}
+.btn {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 250%;
+    text-decoration: none;
+    margin-left: 100px;
+    padding: 10px;
+    color: azure;
+    border: 2px solid azure;
+    border-radius: 7px;
+    margin-left: 50px;
+    
+}
+
+.btn:hover {
+    color: beige;
+    border: 2px solid beige;
+}
+
+@media screen and (max-width: 900px) {
+    
+    .content {
+        margin-left: 90px;
+    }
+    
+    .content h1 {
+        font-size: 450%;
+    }
+    
+    .amr {
+        font-size: 150%;
+        padding-left: 90px;
+    }
+    
+    .btn {
+        margin-left: 90px;
+        font-size: 150%;
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+   
+    .content {
+        padding-left: 0;
+        margin-left: 30px;
+    }
+    
+    .content h1 {
+        font-size: 350%;
+    }
+    
+    .amr {
+        font-size: 150%;
+        padding-left: 30px;
+    }
+    
+    .btn {
+        margin-left: 30px;
+        font-size: 150%;
+    }     
+    
+}
+
+@media screen and (max-width: 480px) {
+    
+    .content {
+        padding-left: 0;
+        margin-left: 30px;
+    }
+    
+    .content h1 {
+        font-size: 250%;
+    }
+    
+    .amr {
+        font-size: 120%;
+        padding-left: 30px;
+    }
+    
+    .btn {
+        margin-left: 30px;
+        font-size: 120%;
+    }   
+    
+}
