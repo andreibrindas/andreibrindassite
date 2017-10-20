@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Random Number Generator</title>
+
+  <style type="text/css">
+
+    .input {
+      width:50px;
+    }
+
+
+  </style>
+
+</head>
+
+<body>
+<h1>Random Number Generator</h1>
+<p>Create a random number betwen</p>
+<p><input type="number" id="smallNumber" min="0" class="input"></p>
+<p>and</p>
+<p><input type="number" id="bigNumber" min="0" class="input"></p>
+<p><button id="generate">Generate Number</button>
+<br>
+<h3>Your number is: <span id="generatedNumber"></span></h3>
+
+  <script type="text/javascript">
+
+    document.getElementById("generate").onclick = function () {
+
+      var smallNr = document.getElementById("smallNumber").value;
+      var bigNr = document.getElementById("bigNumber").value;
+
+      smallNr = parseInt(document.getElementById("smallNumber").value);
+      bigNr = parseInt(document.getElementById("bigNumber").value);
+
+      var randomNumber = Math.floor(Math.random() * bigNr) + (smallNr);
+
+      document.getElementById("generatedNumber").innerHTML = randomNumber;
+
+    }
+
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <script type="text/javascript" src="jquery.min.js" src="foggy.js"></script>
+  <link href="andreibrindas.css" type="text/css" rel="stylesheet">
+  <style type="text/css">
+
+    #background {
+      filter: blur(10px);
+      z-index: 0;
+      position: relative;
+    }
+
+    #enter {
+      position: relative;
+      z-index: 1;
+      bottom: 520px;
+      width:150px;
+      margin: 0 auto;
+      cursor: pointer;
+      border: 2px white solid;
+      border-radius: 20px;
+      padding:5px;
+      color: white;
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+<div class="bg" id="background">
+
+</div>
+<div id="enter">
+<h1 >Enter Site</h1>
+</div>
+
+  <script type="text/javascript">
+
+    $("#enter").click(function () {
+      $(this).slideUp(300, function(){
+        $("#background").css("filter", "blur(0px)");
+      });
+    });
+
+    $("#enter").click(function() {
+      $("body").load("index.html");
+    })
+
+  </script>
+
+</body>
+</html>
